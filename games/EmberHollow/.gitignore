@@ -1,0 +1,7 @@
+.pio/
+out/
+build/
+__pycache__/
+*.ino.cpp
+tools/chsim/build/
+

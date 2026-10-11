@@ -1,0 +1,81 @@
+# One README reel: story, exploration, combat, boss and both endings.
+# Later clips use debug fixtures to frame encounters; no hardware timings.
+wait 2
+rec start 3
+wait 36
+rec stop 01_title
+tap A
+rec start 6
+wait 120
+tap A
+wait 120
+tap A
+wait 120
+rec stop 02_story
+tap A
+hold UP
+wait 14
+release
+hold RIGHT
+wait 14
+release
+rec start 3
+tap A
+wait 14
+tap A
+wait 14
+tap A
+wait 14
+tap A
+wait 14
+tap A
+wait 14
+tap A
+wait 20
+rec stop 03_shrine
+say W 140 300 3
+say H 10
+rec start 3
+hold RIGHT
+wait 29
+release
+wait 12
+rec stop 04_bridge
+tap START
+rec start 3
+wait 32
+rec stop 05_map
+tap START
+say C 63
+say W 436 84 2
+say H 10
+rec start 2
+wait 38
+hold RIGHT
+wait 15
+release
+tap A
+wait 30
+hold LEFT
+wait 15
+release
+wait 14
+rec stop 06_warden
+say W 436 80 2
+say J 1
+rec start 3
+tap A
+wait 90
+rec stop 07_victory
+tap A
+tap A
+say W 148 252 3
+say H 1
+wait 38
+rec start 3
+hold RIGHT
+wait 3
+release
+wait 75
+rec stop 08_defeat
+

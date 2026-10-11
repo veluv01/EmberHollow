@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Ember: setup", "type": "shell", "command": "python", "args": ["tools/project.py", "setup"], "problemMatcher": []},
+    {"label": "Ember: build", "type": "shell", "command": "python", "args": ["tools/project.py", "build"], "group": {"kind": "build", "isDefault": true}, "problemMatcher": "$gcc"},
+    {"label": "Ember: check", "type": "shell", "command": "python", "args": ["tools/project.py", "check"], "problemMatcher": []},
+    {"label": "Ember: GIFs", "type": "shell", "command": "python", "args": ["tools/project.py", "gifs"], "problemMatcher": []}
+  ]
+}

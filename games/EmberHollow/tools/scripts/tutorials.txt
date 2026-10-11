@@ -1,0 +1,58 @@
+# Debug fixtures frame real mechanics; not a continuous quest.
+wait 2
+tap A
+tap B
+say W 120 312 3
+say E
+rec start 2
+tap B
+wait 8
+tap A
+wait 25
+rec stop 01_parry
+say W 140 300 3
+say H 10
+rec start 3
+hold RIGHT
+wait 29
+release
+tap START
+wait 45
+tap SELECT
+wait 45
+rec stop 02_bridge_map
+tap A
+say C 63
+say W 436 84 2
+say H 10
+rec start 2
+wait 38
+hold RIGHT
+wait 15
+release
+wait 24
+hold LEFT
+wait 13
+release
+tap A
+wait 24
+rec stop 03_boss_dodge
+say J 1
+say W 436 80 2
+rec start 3
+tap A
+wait 100
+rec stop 04_victory
+tap A
+tap A
+say W 148 252 3
+say H 1
+wait 38
+rec start 3
+hold RIGHT
+wait 3
+release
+wait 90
+tap A
+wait 30
+rec stop 05_retry

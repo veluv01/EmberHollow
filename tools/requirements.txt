@@ -1,0 +1,5 @@
+platformio==6.1.19
+Pillow==12.3.0
+numpy>=2,<3
+pyserial==3.5
+pyelftools>=0.32,<1

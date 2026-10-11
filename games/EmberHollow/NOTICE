@@ -1,0 +1,21 @@
+Ember Hollow
+Copyright 2026 Ember Hollow contributors
+
+The game code, pixel art, world, and native title lettering are original
+to this project and licensed under Apache-2.0 (LICENSE).
+
+Gameplay inspiration: Ethan's Critters by Kevin Bates (bateske): exploration,
+guarded combat, persistent objectives, an explored map, and a final boss.
+No source code, world data, or purchased Elthen sprite sheets from that
+project are included in Ember Hollow.
+
+The compiled firmware uses CHGame and CHGfx by Kevin Bates (bateske).
+Their original license and attribution files are retained under licenses/.
+The CHGame UI font originates with Press Play On Tape's Blackjack for
+Arduboy (Apache-2.0), as described in licenses/CHGame-NOTICE.txt.
+
+PlatformIO and the CHGame Arduino core/toolchain are external development
+dependencies. Their sources and notices remain in the parent CHGame
+checkout. The precompiled firmware includes their applicable core notices
+under licenses/core/.
+

@@ -1,0 +1,27 @@
+name: Verify
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  firmware-and-simulator:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install Python tools
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -r tools/requirements.txt
+      - name: Native gameplay with sanitizers
+        working-directory: games/EmberHollow
+        env:
+          ASAN_OPTIONS: detect_leaks=0
+        run: |
+          g++ -std=c++14 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra tools/tests/test_game.cpp Game.cpp src/assets/Assets.cpp -o /tmp/ember-native-tests
+          /tmp/ember-native-tests
+      - name: Build release and debug
+        run: .venv/bin/python tools/project.py build
+      - name: Simulator and regression checks
+        run: .venv/bin/python tools/project.py check

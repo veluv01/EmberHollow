@@ -1,0 +1,1558 @@
+Original core/vendor source notices retained for the compiled firmware.
+The complete corresponding platform source is in the pinned CHGame checkout
+listed in INSTALL.md; no core source was modified for this game.
+
+Files: cores/arduino/Client.h
+/*
+  Client.h - Base class that provides Client
+  Copyright (c) 2011 Adrian McEwen.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/HardwareTimer.cpp, cores/arduino/HardwareTimer.h
+/*
+  Copyright (c) 2017 Daniel Fekete
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+  Copyright (c) 2019 STMicroelectronics
+  Modified to support Arduino_Core_STM32
+
+  Modified by TempersLee to support Adruino_Core_CH32
+*/
+
+Files: cores/arduino/Server.h
+/*
+  Server.h - Base class that provides Server
+  Copyright (c) 2011 Adrian McEwen.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Tone.h, cores/arduino/wiring_constants.h, cores/arduino/WMath.h, cores/arduino/pins_arduino.h, cores/arduino/wiring_analog.h, cores/arduino/wiring_pulse.cpp, cores/arduino/wiring_shift.h, cores/arduino/wiring_shift.c, cores/arduino/wiring_pulse.h, cores/arduino/wiring_digital.c, cores/arduino/pins_arduino.cpp, cores/arduino/wiring_time.c, cores/arduino/wiring_digital.h, cores/arduino/WMath.cpp
+/*
+  Copyright (c) 2011 Arduino.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/WInterrupts.cpp, cores/arduino/WInterrupts.h
+/*
+  Copyright (c) 2011-2012 Arduino.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Stream.cpp
+/*
+ Stream.cpp - adds parsing methods to Stream class
+ Copyright (c) 2008 David A. Mellis.  All right reserved.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+ Created July 2011
+ parsing functions based on TextFinder library by Michael Margolis
+
+ findMulti/findUntil routines written by Jim Leonard/Xuth
+ */
+
+Files: cores/arduino/HardwareSerial.cpp
+/*
+  HardwareSerial.cpp - Hardware serial library for Wiring
+  Copyright (c) 2006 Nicholas Zambetti.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  Modified 23 November 2006 by David A. Mellis
+  Modified 28 September 2010 by Mark Sproul
+  Modified 14 August 2012 by Alarus
+  Modified 3  December 2013 by Matthijs Kooijman
+  Modified 1 may 2023 by TempersLee
+  Modified 8 September 2025 by Jobit Joseph (Universal CH32 RX Buffer Support)
+*/
+
+Files: cores/arduino/Tone.cpp
+/* Tone.cpp
+
+  A Tone Generator Library
+
+  Written by Brett Hagman
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/pins_arduino_digital.h, cores/arduino/pins_arduino_analog.h, cores/arduino/ch32/analog.cpp
+/*
+ *******************************************************************************
+ * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+ * All rights reserved.
+ *
+ * This software component is licensed by WCH under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ *******************************************************************************
+ */
+
+Files: cores/arduino/wiring_analog.c
+/*
+ Copyright (c) 2011 Arduino.  All right reserved.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ See the GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+Files: cores/arduino/wiring_time.h, cores/arduino/wiring.h
+/*
+  Copyright (c) 2011 Arduino.  All right reserved.
+  Copyright (c) 2013 by Paul Stoffregen <paul@pjrc.com> (delayMicroseconds)
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/hooks.c
+/*
+  Copyright (c) 2012 Arduino.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/WCharacter.h
+/*
+ WCharacter.h - Character utility functions for Wiring & Arduino
+ Copyright (c) 2010 Hernando Barragan.  All right reserved.
+ 
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ 
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ 
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+Files: cores/arduino/Arduino.h
+/*
+  Arduino.h - Main include file for the Arduino SDK
+  Copyright (c) 2005-2013 Arduino Team.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/itoa.h, cores/arduino/itoa.cpp
+/*
+  Copyright (c) 2011 Arduino.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/HardwareSerial.h
+/*
+  HardwareSerial.h - Hardware serial library for Wiring
+  Copyright (c) 2006 Nicholas Zambetti.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  Modified 28 September 2010 by Mark Sproul
+  Modified 14 August 2012 by Alarus
+  Modified 3 December 2013 by Matthijs Kooijman
+  Modified 1 may 2023 by TempersLee
+  Modified 8 September 2025 by Jobit Joseph (Universal CH32 RX Buffer Support)
+*/
+
+Files: cores/arduino/abi.cpp
+/*
+  Copyright (c) 2014 Arduino.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/WString.h
+/*
+  WString.h - String library for Wiring & Arduino
+  ...mostly rewritten by Paul Stoffregen...
+  Copyright (c) 2009-10 Hernando Barragan.  All right reserved.
+  Copyright 2011, Paul Stoffregen, paul@pjrc.com
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Udp.h
+/*
+ *  Udp.cpp: Library to send/receive UDP packets.
+ *
+ * NOTE: UDP is fast, but has some important limitations (thanks to Warren Gray for mentioning these)
+ * 1) UDP does not guarantee the order in which assembled UDP packets are received. This
+ * might not happen often in practice, but in larger network topologies, a UDP
+ * packet can be received out of sequence. 
+ * 2) UDP does not guard against lost packets - so packets *can* disappear without the sender being
+ * aware of it. Again, this may not be a concern in practice on small local networks.
+ * For more information, see http://www.cafeaulait.org/course/week12/35.html
+ *
+ * MIT License:
+ * Copyright (c) 2008 Bjoern Hartmann
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * bjoern@cs.stanford.edu 12/30/2008
+ */
+
+Files: cores/arduino/Print.cpp
+/*
+  Copyright (c) 2014 Arduino.  All right reserved.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Print.h
+/*
+  Copyright (c) 2016 Arduino LLC.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See the GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Printable.h
+/*
+  Printable.h - Interface class that allows printing of complex types
+  Copyright (c) 2011 Adrian McEwen.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/Stream.h
+/*
+  Stream.h - base class for character-based streams.
+  Copyright (c) 2010 David A. Mellis.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  parsing functions based on TextFinder library by Michael Margolis
+*/
+
+Files: cores/arduino/binary.h
+/*
+  binary.h - Definitions for binary constants
+  Copyright (c) 2006 David A. Mellis.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/WString.cpp
+/*
+  WString.cpp - String library for Wiring & Arduino
+  ...mostly rewritten by Paul Stoffregen...
+  Copyright (c) 2009-10 Hernando Barragan.  All rights reserved.
+  Copyright 2011, Paul Stoffregen, paul@pjrc.com
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/IPAddress.h
+/*
+  IPAddress.h - Base class that provides IPAddress
+  Copyright (c) 2011 Adrian McEwen.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/IPAddress.cpp
+/*
+  IPAddress.cpp - Base class that provides IPAddress
+  Copyright (c) 2011 Adrian McEwen.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/avr/dtostrf.h, cores/arduino/avr/dtostrf.c
+/*
+  dtostrf - Emulation for dtostrf function from avr-libc
+  Copyright (c) 2013 Arduino.  All rights reserved.
+  Written by Cristian Maglie <c.maglie@arduino.cc>
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+Files: cores/arduino/avr/pgmspace.h
+/* Simple compatibility headers for AVR code used with ARM chips
+ * Copyright (c) 2015 Paul Stoffregen <paul@pjrc.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+Files: cores/arduino/ch32/analog.h
+/**
+  ******************************************************************************
+  * @file    analog.h
+  * @author  WI6LABS
+  * @version V1.0.0
+  * @date    01-August-2016
+  * @brief   Header for analog module
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  Modified 1 may 2023 by TempersLee
+  */
+
+Files: cores/arduino/ch32/digital_io.h
+/**
+  ******************************************************************************
+  * @file    digital_io.h
+  * @brief   Header for digital_io module
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  Modified 1 may 2023 by TempersLee
+  */
+
+Files: cores/arduino/ch32/core_callback.h
+/**
+  ******************************************************************************
+  * @file    core_callback.h
+  * @author  WI6LABS
+  * @version V1.0.0
+  * @date    8-September-2017
+  * @brief   Header for callback methods.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT(c) 2017 STMicroelectronics</center></h2>
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  Modified 1 may 2023 by TempersLee
+  */
+
+Files: cores/arduino/ch32/clock.c, cores/arduino/ch32/backup.h, cores/arduino/ch32/timer.h, cores/arduino/ch32/pinconfig.h, cores/arduino/ch32/clock.h, cores/arduino/ch32/pinmap.c, cores/arduino/ch32/uart.c, cores/arduino/ch32/PinNamesTypes.h, variants/CH32X035/CHGame_WeActF8U6/variant_CHGame_WeActF8U6.cpp, variants/CH32X035/CHGame_WeActF8U6/PeripheralPins.c
+/**
+ *******************************************************************************
+ * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+ * All rights reserved.
+ *
+ * This software component is licensed by WCH under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ *******************************************************************************
+ */
+
+Files: cores/arduino/ch32/PinConfigured.h, cores/arduino/ch32/PortNames.c
+/*
+ *******************************************************************************
+ * Copyright (c) 2017, STMicroelectronics
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. Neither the name of STMicroelectronics nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *******************************************************************************
+ Modified 1 may 2023 by TempersLee
+ */
+
+Files: cores/arduino/ch32/timer.c
+/**
+ *******************************************************************************
+ * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+ * All rights reserved.
+ *
+ * This software component is licensed by WCH under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ *******************************************************************************
+modified by TempersLee 
+ */
+
+Files: cores/arduino/ch32/PeripheralPins.h
+/*
+ *******************************************************************************
+ * Copyright (c) 2014, STMicroelectronics
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. Neither the name of STMicroelectronics nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *******************************************************************************
+ Modified 1 may 2023 by TempersLee
+ */
+
+Files: cores/arduino/ch32/pinmap.h
+/* mbed Microcontroller Library
+ * Copyright (c) 2006-2013 ARM Limited
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+Files: cores/arduino/ch32/interrupt.h
+/**
+  ******************************************************************************
+  * @file    interrupt.h
+  * @author  WI6LABS
+  * @version V1.0.0
+  * @date    01-August-2016
+  * @brief   Header for interrupt module
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  Modified 1 may 2023 by TempersLee
+  */
+
+Files: cores/arduino/ch32/uart.h
+/**
+  ******************************************************************************
+  * @file    uart.h
+  * @author  WI6LABS, fpistm
+  * @brief   Header for uart module
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  Modified 1 may 2023 by TempersLee
+  */
+
+Files: cores/arduino/ch32/PortNames.h
+/*
+ *******************************************************************************
+ * Copyright (c) 2016, STMicroelectronics
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. Neither the name of STMicroelectronics nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *******************************************************************************
+ Modified 1 may 2023 by TempersLee
+ */
+
+Files: system/CH32X035/USER/ch32x035_conf.h
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_conf.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : Library configuration file.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/USER/system_ch32x035.h
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : system_ch32x035.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : CH32X035 Device Peripheral Access Layer System Header File.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/USER/system_ch32x035.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : system_ch32x035.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : CH32X035 Device Peripheral Access Layer System Source File.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/USER/ch32x035_it.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_it.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : Main Interrupt Service Routines.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/USER/ch32x035_it.h
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_it.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains the headers of the interrupt handlers.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Debug/debug.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : debug.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for UART
+ *                      Printf , Delay functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Debug/debug.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : debug.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for UART
+ *                      Printf , Delay functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Startup/startup_ch32x035.S
+/********************************** (C) COPYRIGHT *******************************
+;* File Name          : startup_ch32x035.s
+;* Author             : WCH
+;* Version            : V1.0.0
+;* Date               : 2023/04/06
+;* Description        : vector table for eclipse toolchain.
+;*********************************************************************************
+;* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+;* Attention: This software (modified or not) and binary are used for 
+;* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+;*******************************************************************************/
+
+Files: system/CH32X035/SRC/Core/core_riscv.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : core_riscv.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : RISC-V Core Peripheral Access Layer Source File
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Core/core_riscv.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : core_riscv.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : RISC-V Core Peripheral Access Layer Header File for CH32X035
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_awu.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_awu.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the AWU firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_exti.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_exti.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the EXTI firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_gpio.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_gpio.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the GPIO firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_dbgmcu.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_dbgmcu.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the DBGMCU firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_misc.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_misc.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the miscellaneous firmware functions .
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_opa.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_opa.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the OPA firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_usart.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_usart.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the USART firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_tim.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_tim.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the TIM firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_rcc.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_rcc.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the RCC firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_iwdg.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_iwdg.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the IWDG firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_spi.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_spi.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the SPI firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_wwdg.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_wwdg.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the WWDG firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_flash.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_flash.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the FLASH firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_dma.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_dma.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the DMA firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_adc.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_adc.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the ADC firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_pwr.c
+/********************************** (C) COPYRIGHT *******************************
+ * File Name          : ch32x035_pwr.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the PWR firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/src/ch32x035_i2c.c
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_i2c.c
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the I2C firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_opa.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_opa.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      OPA firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_pwr.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_pwr.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the PWR
+ *                      firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_tim.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_tim.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      TIM firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_spi.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_spi.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      SPI firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_misc.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_misc.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      miscellaneous firmware library functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_awu.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_awu.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      AWU firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_dma.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_dma.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      DMA firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_flash.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_flash.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the FLASH
+ *                      firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_i2c.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_i2c.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      I2C firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_dbgmcu.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_dbgmcu.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      DBGMCU firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_usart.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_usart.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      USART firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_rcc.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_rcc.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file provides all the RCC firmware functions.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_wwdg.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_wwdg.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the WWDG
+ *                      firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_gpio.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_gpio.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      GPIO firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_exti.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_exti.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      EXTI firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_adc.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_adc.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      ADC firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035_iwdg.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035_iwdg.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : This file contains all the functions prototypes for the
+ *                      IWDG firmware library.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for 
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+
+Files: system/CH32X035/SRC/Peripheral/inc/ch32x035.h
+/********************************** (C) COPYRIGHT  *******************************
+ * File Name          : ch32x035.h
+ * Author             : WCH
+ * Version            : V1.0.0
+ * Date               : 2023/04/06
+ * Description        : CH32X035 Device Peripheral Access Layer Header File.
+*********************************************************************************
+* Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+* Attention: This software (modified or not) and binary are used for
+* microcontroller manufactured by Nanjing Qinheng Microelectronics.
+*******************************************************************************/
+

@@ -1,0 +1,27 @@
+EmberHollow: check
+== host tests
+Ember Hollow: 503252 checks passed (controls, paths, lava, shrines, combat, save, boss, soak).
+== scripts (3)
+  ok    gameplay      (8 images, identical twice)
+  ok    smoke         (15 images, identical twice)
+      STATE mode=1 x=68 y=316 hp=10 cleared=0 boss=24 ticks=7 phase=0 story=3 quit_ms=0
+      STATE mode=1 x=436 y=84 hp=10 cleared=63 boss=24 ticks=110 phase=1 story=3 quit_ms=0
+      STATE mode=4 x=436 y=80 hp=10 cleared=63 boss=0 ticks=115 phase=0 story=3 quit_ms=0
+      STATE mode=3 x=148 y=252 hp=0 cleared=63 boss=0 ticks=115 phase=0 story=3 quit_ms=0
+  ok    tutorials     (5 images, identical twice)
+== redraw (0 scripts)
+  none
+== simulator tests (1)
+  ok   flash record retains checkpoint position
+  ok   flash record retains checkpoint health
+  ok   flash record retains elapsed game time
+  ok   NEW shows the story again
+  ok   opening story does not overwrite the previous save
+  ok   NEW starts a fresh quest
+  ok   NEW starts at the hut
+  ok   holding START for three seconds does not exit
+  ok   release cancels the exit countdown
+  ok   game remains active just before the five-second deadline
+  ok   five-second hold calls the menu exit successfully
+  chsim: START held 3 s: exit to the menu
+ALL GOOD

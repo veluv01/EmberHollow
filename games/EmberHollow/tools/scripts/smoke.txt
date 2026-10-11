@@ -1,0 +1,62 @@
+wait 2
+snap 01_title
+tap A
+snap 02_story_one
+tap A
+snap 03_story_two
+tap A
+snap 04_story_three
+tap A
+wait 4
+say Z
+snap 02_home
+hold UP
+wait 14
+release
+hold RIGHT
+wait 14
+release
+tap A
+wait 14
+tap B
+wait 8
+snap 03_shrine
+tap START
+wait 2
+snap 04_map
+tap SELECT
+snap 05_help
+tap A
+say C 63
+say W 436 84 2
+say H 10
+wait 42
+say Z
+snap 06_warden
+say J 12
+wait 2
+snap 07_half_health
+say J 1
+say W 436 80 2
+tap A
+wait 50
+say Z
+snap 08_victory
+tap A
+tap A
+say W 148 252 3
+say H 1
+wait 38
+hold RIGHT
+wait 3
+release
+wait 40
+say Z
+snap 09_defeat
+hold START
+wait 90
+snap 10_exit_hold
+release
+wait 2
+snap 11_exit_cancelled
+
