@@ -43,7 +43,7 @@ A opens a three-page illustrated story for a new quest. A advances it; B skips i
 
 The game runs at a target of 30 frames per second and stores all art in flash. It requires no `CRITTERS.DAT` or other runtime asset file. Sounds and a status LED are not required.
 
-For the existing WeAct F8U6 handheld, copy the included `sdcard/GAMES/EMBER.CHG` to the SD card's `GAMES/` folder, or build and upload the `ember` PlatformIO environment. See [INSTALL.md](INSTALL.md) for exact steps and [CHGame installation](https://github.com/bateske/CHGame#installing) for the platform. This standalone game is supplied separately from the upstream casino release.
+For the original CHGame Rev0 console, copy `sdcard/rev0/GAMES/EMBER.CHG` from the repository to the card's `GAMES/` folder, or build/upload `ember-rev0`. For the WeAct F8U6 handheld, use `sdcard/weact-f8u6/GAMES/EMBER.CHG` and `ember`. Both targets use the same source and features; select the binary that matches the console. See [INSTALL.md](INSTALL.md) for exact steps and [CHGame installation](https://github.com/bateske/CHGame#installing) for the platform.
 
 Learn with five short clips in the [beginner guide](docs/BEGINNERS.md).
 
@@ -53,7 +53,7 @@ Learn with five short clips in the [beginner guide](docs/BEGINNERS.md).
 - `View.cpp` uses the standard CHGfx packed blitter and a fixed 16-colour palette. No shared library changes or game-specific library forks are needed.
 - `EmberHollow.ino` waits for the previous display transfer before drawing or storing flash records; it opts out of CHGame's default three-second shortcut and uses `QuitHold.h` to call the public menu-exit API after five real seconds. The deadline also works while paused or in story and ending screens.
 - `tools/assets.py` generates the original sprites, tile world, and title art; `tools/cart.py` maps the cover through CHGame's artkit for the visual menu.
-- `platformio.ini` uses the parent checkout's maintained WeAct variant and keeps release/debug artifacts separate.
+- `platformio.ini` offers both boards, uses their upstream variant sources, and keeps board/release/debug artifacts separate. The application-only Rev0 build adapter is in `tools/platformio/rev0/`.
 - See [NOTES.md](NOTES.md) for tests, memory measurements, save compatibility, and development details.
 
 ## Credits

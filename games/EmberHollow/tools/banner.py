@@ -24,7 +24,7 @@ def main():
     canvas.paste(title,(40,56))
     draw.text((409,38),'EMBER HOLLOW',font=font(44,True),fill='#ffeb91')
     draw.text((412,98),'SIX LANTERNS. ONE LAST SPARK.',font=font(20,True),fill='#fb9b34')
-    draw.text((412,131),'A Halloween adventure for CHGame / WeAct F8U6',font=font(16),fill='#c8bbc8')
+    draw.text((412,131),'A Halloween adventure for CHGame Rev0 / WeAct F8U6',font=font(16),fill='#c8bbc8')
     panels=[('02_story_one.png','THE CURSE AWAKENS'),('06_warden.png','FACE THE ASH WARDEN'),('08_victory.png','BRING THE DAWN HOME')]
     for x,(filename,label) in zip((412,690,968),panels):
         draw.rectangle((x-3,176,x+195,374),fill='#544353')

@@ -1,6 +1,6 @@
 # Ember Hollow: developer notes
 
-Version 1.1.0 is a complete small quest for the existing WeAct F8U6 variant. The game is original; Ethan's Critters supplies the broad exploration/combat inspiration. It deliberately uses a smaller tile world and flash-resident art to work with the current shared libraries without Critters' streaming patches.
+Version 1.1.0 is a complete small quest for the original CHGame Rev0 console and the existing WeAct F8U6 variant. The game is original; Ethan's Critters supplies the broad exploration/combat inspiration. It deliberately uses a smaller tile world and flash-resident art to work with the current shared libraries without Critters' streaming patches.
 
 ## Design and memory
 
@@ -11,7 +11,7 @@ Version 1.1.0 is a complete small quest for the existing WeAct F8U6 variant. The
 - The default display SPI clock is 12 MHz (`GFX_DIV4`) for breadboards. It is a game setting, not a change to the hardware variant. No SD transactions happen while playing.
 - All save writes happen after `gfx_wait()` and before the next flush. A failed write is reported on the map and not retried every frame. A later checkpoint can try again.
 
-Memory figures for the supplied WeAct binaries are in `BUILD_REPORT.md`. The flash limit with two save pages is 50,432 bytes; static SRAM budget is 18,416 bytes after the retained boot block and 2 KB stack. Measure again after changing art, code, libraries, or the toolchain.
+Current memory figures for all four profiles are in the repository root's `BUILD_REPORT_BOARDS.md`; `BUILD_REPORT.md` records the earlier WeAct-only package. The flash limit with two save pages is 50,432 bytes; static SRAM budget is 18,416 bytes after the retained boot block and 2 KB stack. Measure again after changing art, code, libraries, or the toolchain.
 
 ## Save contract
 
@@ -83,13 +83,13 @@ python tools/readme_gif.py games/EmberHollow --no-run
 python games/EmberHollow/tools/tutorial_gifs.py
 ```
 
-The standalone repository's `tools/project.py` bootstraps the locked dependency and offers `build`, `check`, and `gifs`. Its local-checkout import and root PlatformIO builds were verified on Linux. The network bootstrap path and Windows/macOS hosts were not exercised here. The included GitHub workflow is ready to run after publication; it has not yet run remotely.
+The standalone repository's `tools/project.py` bootstraps the locked dependency and offers `build`, `check`, and `gifs`. Its local-checkout import and root PlatformIO builds were verified on Linux. The WeAct release previously passed the complete GitHub workflow from a fresh checkout. CI now builds both boards and verifies their committed packages. Windows/macOS hosts and physical consoles have not been exercised here.
 
 ## Upstream maintenance
 
-The `platformio.ini` extends the parent port's `env:game` and reads its builder/core/libraries directly. It uses a unique absolute symlink alias to avoid PlatformIO resolving a platform from another checkout. The same sketch also builds from the parent root's game environment using `CHGAME_SKETCH`.
+The WeAct environments extend the parent port's `env:game` and read its builder/core/libraries directly. `ember-rev0` and `ember-rev0-debug` use the small application-only adapter in `tools/platformio/rev0/`. This adapter reads `rev0.*` from the current dependency's `boards.txt`, compiles its `CHGame_Rev0` variant with `CH32X035G8U`, preserves the app/save memory map, and packages/uploads as `CX35`. It contains no copied Arduino core or game logic. Its build mechanics and pinned toolchain selection are adapted from the maintained WeAct PlatformIO port (Apache-2.0). Review this adapter when the dependency's build contract changes. It uses a unique absolute symlink alias to avoid PlatformIO resolving a platform from another checkout. The same sketch also builds from the parent root's game environment using `CHGAME_SKETCH`.
 
-No shared CHGame files are modified. Rebuild `ember` and `ember-debug`, run `check --no-device`, regenerate the preview if pixels change, export for `weact-f8u6`, and verify the cart/header after each upstream merge. Never relabel a Rev0 binary as WF86. Rev0 compilation and hardware playtesting were not performed for this package.
+No shared CHGame files are modified. Rebuild `ember`, `ember-debug`, `ember-rev0`, and `ember-rev0-debug`, run `check --no-device`, regenerate the preview if pixels change, run `tools/package_boards.py --check`, and verify both board packages after each upstream merge. Never relabel a Rev0 binary as WF86. Rev0 and WeAct release/debug compilation are covered; hardware playtesting is still pending.
 
 ## Follow-up work
 

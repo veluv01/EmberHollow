@@ -4,9 +4,9 @@
 
 **Six lanterns. One last spark. A hollow worth saving.**
 
-A Halloween adventure through molten rivers and haunted ruins, built for **CHGame on WeAct CH32X035F8U6**. You are Wick, a pumpkin guardian carrying the last light of Halloween. Restore six cursed shrines, open the northern gate, and face the Ash Warden.
+A Halloween adventure through molten rivers and haunted ruins, built for **the original CHGame Rev0 console and the WeAct CH32X035F8U6 variant**. You are Wick, a pumpkin guardian carrying the last light of Halloween. Restore six cursed shrines, open the northern gate, and face the Ash Warden.
 
-[Play on your handheld](INSTALL.md) · [Beginner guide](games/EmberHollow/docs/BEGINNERS.md) · [Build verification](BUILD_REPORT.md) · [Changelog](CHANGELOG.md)
+[Play on your handheld](INSTALL.md) · [Beginner guide](games/EmberHollow/docs/BEGINNERS.md) · [Build verification](BUILD_REPORT_BOARDS.md) · [Changelog](CHANGELOG.md)
 
 ![Gameplay: story, exploration, combat, map, boss, and endings](games/EmberHollow/docs/gameplay.gif)
 
@@ -19,11 +19,16 @@ All pixel art is original and embedded in the firmware. **No `.DAT` file, buzzer
 
 ## Play from the SD menu
 
-1. Download/unzip this repository or the supplied package.
-2. Copy [`sdcard/GAMES/EMBER.CHG`](sdcard/GAMES/EMBER.CHG) to the existing SD card's `GAMES/` folder.
-3. Restart your compatible WeAct handheld and select **EMBER HOLLOW**.
+Choose the file for your console, copy it into the SD card's `GAMES/` folder as **EMBER.CHG**, then restart and select **EMBER HOLLOW**.
 
-Keep your existing card contents and menu bootloader. This binary targets **WF86** and must not be installed as a Rev0/CX35 game. See [INSTALL.md](INSTALL.md) for rebuilding and USB upload.
+| Console | SD game | PlatformIO release / debug | Target |
+|---|---|---|---|
+| Original CHGame Rev0, CH32X035G8U6 | [Rev0 EMBER.CHG](sdcard/rev0/GAMES/EMBER.CHG) | `ember-rev0` / `ember-rev0-debug` | CX35 |
+| WeAct CH32X035F8U6 variant | [WeAct EMBER.CHG](sdcard/weact-f8u6/GAMES/EMBER.CHG) | `ember` / `ember-debug` | WF86 |
+
+The [combined cart](cart/EmberHollow-MultiBoard.chgame) contains both binaries. CHGame tools choose by device; see [INSTALL.md](INSTALL.md) for `--device rev0` or `--device weact-f8u6` deployment. A [Rev0-only cart](cart/EmberHollow-Rev0.chgame) is also included.
+
+Keep your existing card contents and menu bootloader. The legacy `sdcard/GAMES/EMBER.CHG`, `firmware/EmberHollow.bin`, and `cart/EmberHollow.chgame` remain the original WeAct downloads. Board-specific files use distinct paths and checked target IDs. Both versions have the same story, gameplay, saves, and five-second START exit.
 
 ## Learn in a few seconds
 
@@ -54,17 +59,22 @@ Install Git and Python 3.10+, then run at the repository root:
 ```sh
 python -m pip install -r tools/requirements.txt
 python tools/project.py setup
+# Original CHGame console
+pio run -e ember-rev0
+pio run -e ember-rev0-debug
+# WeAct F8U6 variant
 pio run -e ember
 pio run -e ember-debug
 ```
 
-After setup, open this root folder in VS Code / PlatformIO. Use `ember` for normal play and `ember-debug` for the serial debug protocol. To upload through the already installed CHGame USB bootloader:
+After setup, open this root folder in VS Code / PlatformIO. Choose the environment from the table above. The `-debug` environments enable the serial debug protocol. To upload through the already installed CHGame USB bootloader:
 
 ```sh
-pio run -e ember -t upload --upload-port COM5
+pio run -e ember-rev0 -t upload --upload-port COM5
+# Use -e ember instead for the WeAct board.
 ```
 
-Replace `COM5` with the device's actual serial port. Uploading was not performed during package verification. Exported binaries live in `games/EmberHollow/build/weact-f8u6/`.
+Replace `COM5` with the device's actual serial port. Uploading was not performed during package verification. Exported binaries live in `games/EmberHollow/build/rev0/` or `games/EmberHollow/build/weact-f8u6/`, with separate release/debug folders.
 
 ### A maintained dependency, an independent game
 
@@ -78,7 +88,7 @@ python tools/project.py setup --source /path/to/CHGame
 
 `--source` uses that checkout as supplied; it does not enforce the lock revision. Alternatively, copy `games/EmberHollow` into an existing CHGame checkout and open that game folder in PlatformIO.
 
-Future CHGame changes require updating the dependency lock, rebuilding both profiles, and running the checks. No shared core changes are required by this game; compatibility with unreleased APIs is not guaranteed.
+Future CHGame changes require updating the dependency lock, rebuilding both profiles, and running the checks. The Rev0 adapter lives in `games/EmberHollow/tools/platformio/rev0/` and reads the dependency's original `CHGame_Rev0` definition. It builds applications only and checks the variant, MCU, ABI, and memory layout. No shared core changes are required by this game; compatibility with unreleased APIs is not guaranteed.
 
 ## Check and record
 
@@ -90,9 +100,18 @@ python tools/project.py check
 python tools/project.py gifs
 ```
 
-Each command accepts `--source /path/to/CHGame`. The checks cover combat, progression, story, endings, save/restart, the five-second exit, a 100,000-tick soak, and repeatable rendering. The recordings use the game's configured 30 Hz timing.
+`build` compiles release and debug for both boards. Each command accepts `--source /path/to/CHGame`. The checks cover combat, progression, story, endings, save/restart, the five-second exit, a 100,000-tick soak, and repeatable rendering. The recordings use the game's configured 30 Hz timing.
 
-Release/debug compilation and simulator checks passed on Linux; see [measured memory and verification scope](BUILD_REPORT.md). The local-checkout setup was exercised; network bootstrap and Windows/macOS were not tested here. GitHub Actions is configured in [verify.yml](.github/workflows/verify.yml); a remote run is still required after publication.
+Release/debug compilation and simulator checks passed on Linux; see [measured memory and verification scope](BUILD_REPORT_BOARDS.md). The prior WeAct release also passed a fresh GitHub Actions checkout. The [CI workflow](.github/workflows/verify.yml) now builds both boards, checks the shared game in the simulator, and verifies committed packages against fresh builds. Windows/macOS and physical consoles have not been tested here.
+
+To regenerate the labeled downloads after building:
+
+```sh
+python games/EmberHollow/tools/package_boards.py
+python games/EmberHollow/tools/package_boards.py --check
+```
+
+The check validates target IDs, payloads, menu art, wrong-board rejection, and cart round trips. It leaves the legacy WeAct files untouched. See [CONTRIBUTING.md](CONTRIBUTING.md) for keeping package hashes current.
 
 ## Repository map
 
@@ -102,9 +121,9 @@ Release/debug compilation and simulator checks passed on Linux; see [measured me
 | `games/EmberHollow/View.*` | Pixel renderer, story, HUD, endings, and exit overlay |
 | `games/EmberHollow/QuitHold.h` | Millisecond-based exit deadline and cancellation |
 | `games/EmberHollow/tools/` | Original asset recipes, tests, recordings, and packager |
-| `sdcard/GAMES/EMBER.CHG` | Ready-to-install SD game |
-| `cart/EmberHollow.chgame` | CHGame distributable cart |
-| `firmware/EmberHollow.bin` | Raw WF86 application image, origin `0x3000` |
+| `sdcard/<device>/GAMES/EMBER.CHG` | Ready-to-install game for the selected console |
+| `cart/EmberHollow-MultiBoard.chgame` | Cart containing both device binaries |
+| `firmware/<device>/EmberHollow.bin` | Board-specific application image, origin `0x3000` |
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before making changes and [developer notes](games/EmberHollow/NOTES.md) for the save and rendering contracts.
 

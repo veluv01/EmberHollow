@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 — original-console port (2026-10-12)
+
+- Added release and debug builds for the original CHGame Rev0 console (CH32X035G8U6 / CX35), using the same game source and save format.
+- Added separate board-labeled SD and firmware downloads, a Rev0-only cart, and a combined cart containing both devices. Existing WeAct downloads remain available.
+- Added application-only Rev0 PlatformIO support and CI checks for all four profiles, package reproducibility, target IDs, and wrong-board rejection.
+
 ## 1.1.0
 
 - Added a three-page illustrated opening story introducing Wick, the six cursed shrines, and the Ash Warden. Continue bypasses it; B skips it.

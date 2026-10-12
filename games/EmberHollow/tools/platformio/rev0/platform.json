@@ -1,0 +1,23 @@
+{
+  "name": "chgame-rev0",
+  "title": "CHGame original console (Rev0)",
+  "description": "Ember Hollow adapter for the unmodified CHGame Rev0 Arduino board package",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/bateske/CHGame",
+  "engines": {
+    "platformio": ">=6.1.18,<7"
+  },
+  "frameworks": {
+    "arduino": {
+      "script": "builder/frameworks/arduino.py"
+    }
+  },
+  "packages": {
+    "toolchain-riscv": {
+      "type": "toolchain",
+      "optional": false,
+      "version": "https://github.com/Community-PIO-CH32V/toolchain-riscv-linux.git#e8e7ba93c9c1ea30366d98f28318d4ad09b369e2"
+    }
+  }
+}

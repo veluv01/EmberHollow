@@ -1,0 +1,126 @@
+Processing ember-rev0 (platform: chgame-ember-rev0-EmberHollow-62992efcad=symlink:///workspace/scratch/8b1555d40b4e/work/EmberHollows/games/EmberHollow/tools/platformio/rev0; board: rev0; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/chgame-rev0/rev0.html
+PLATFORM: CHGame original console (Rev0) (1.0.0) > CHGame Rev0 (CH32X035G8U6)
+HARDWARE: CH32X035G8U6 48MHz, 17.98KB RAM, 49.75KB Flash
+PACKAGES: 
+ - toolchain-riscv @ 1.80200.190731+sha.e8e7ba9
+Converting EmberHollow.ino
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain+, Compatibility ~ soft
+Found 6 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- CHGame @ 0.1.0
+|-- CHGfx @ 1.3.2
+Building in release mode
+Compiling .pio/build/ember-rev0/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/HardwareTimer.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/WInterrupts.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/WString.cpp.o
+/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/Tone.cpp:136:2: warning: #warning "TIMER_TONE or TIM_MODULE_ENABLED not defined" [-Wcpp]
+ #warning "TIMER_TONE or TIM_MODULE_ENABLED not defined"
+  ^~~~~~~
+Compiling .pio/build/ember-rev0/FrameworkArduino/abi.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/avr/dtostrf.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/board.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/PortNames.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/analog.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/ch32_def.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/chgame_boot.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/clock.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/hw_config.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/interrupt.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_adc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_bkp.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_can.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_crc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_dac.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_dbgmcu.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_debug.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_dma.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_dvp.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_eth.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_exti.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_flash.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_fsmc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_gpio.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_i2c.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_it.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_iwdg.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_lptim.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_misc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_opa.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_pwr.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_rcc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_rng.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_rtc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_sdio.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_spi.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_tim.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_usart.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/ch32yyxx_wwdg.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/core_riscv_ch32yyxx.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/lib/system_ch32yyxx.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/pinmap.c.o
+riscv-none-embed-gcc -x assembler-with-cpp -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -ffunction-sections -fdata-sections -fno-common -Os -flto -DARDUINO=10819 -DARDUINO_ARCH_CH32 -DCH32X035 -DCH32X035G8U -DVARIANT_H=\"variant_CHGame_Rev0.h\" -DSYSCLK_FREQ_48MHz_HSI=48000000 -DF_CPU=48000000 -DNDEBUG -DUART_MODULE_ONLY -DTIM_MODULE_ONLY -DUSE_CHGAME_USB_BOOTONLY -DPLATFORMIO=60119 -DARDUINO_CHGAME_REV0 -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/variants/CH32X035/CHGame_Rev0 -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/variants/CH32X035 -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/ch32/usb -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/avr -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/ch32 -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/ch32/lib -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/USER -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/SRC/Core -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/SRC/Debug -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/SRC/Startup -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/SRC/Peripheral/inc -I/workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/system/CH32X035/SRC/Peripheral/src -c -o .pio/build/ember-rev0/FrameworkArduino/ch32/startup_ch32yyxx.S.o /workspace/scratch/8b1555d40b4e/work/EmberHollows/platform/board/arduino/CHGame/cores/arduino/ch32/startup_ch32yyxx.S
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/timer.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/uart.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/usb/CHGameUSBSerial.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/usb/wch_usbcdc_cdc.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/usb/wch_usbcdc_descr.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/ch32/usb/wch_usbcdc_handler.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/core_debug.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/hooks.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/itoa.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/main.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/pins_arduino.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/wiring_analog.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/wiring_digital.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/wiring_pulse.cpp.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/wiring_shift.c.o
+Compiling .pio/build/ember-rev0/FrameworkArduino/wiring_time.c.o
+Compiling .pio/build/ember-rev0/Variant/PeripheralPins.c.o
+Compiling .pio/build/ember-rev0/Variant/variant_CHGame_Rev0.cpp.o
+Compiling .pio/build/ember-rev0/sketch-98ca948f900eebda/EmberHollow.ino.cpp.o
+Compiling .pio/build/ember-rev0/sketch-98ca948f900eebda/Game.cpp.o
+Compiling .pio/build/ember-rev0/sketch-98ca948f900eebda/View.cpp.o
+Compiling .pio/build/ember-rev0/sketch-98ca948f900eebda/src/assets/Assets.cpp.o
+Compiling .pio/build/ember-rev0/lib338/CHGfx/CHGfx.cpp.o
+Compiling .pio/build/ember-rev0/lib338/CHGfx/CHGfx_draw.cpp.o
+Compiling .pio/build/ember-rev0/lib338/CHGfx/CHGfx_extras.cpp.o
+Compiling .pio/build/ember-rev0/lib338/CHGfx/CHGfx_palette.cpp.o
+Compiling .pio/build/ember-rev0/lib338/CHGfx/CHGfx_textfx.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Audio.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Debug.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Draw.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Ease.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Fmt.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Input.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Mask.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Palette.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Save.cpp.o
+Compiling .pio/build/ember-rev0/lib90d/CHGame/chgame/Shake.cpp.o
+Archiving .pio/build/ember-rev0/lib338/libCHGfx.a
+Indexing .pio/build/ember-rev0/lib338/libCHGfx.a
+Archiving .pio/build/ember-rev0/lib90d/libCHGame.a
+Indexing .pio/build/ember-rev0/lib90d/libCHGame.a
+Linking .pio/build/ember-rev0/firmware.elf
+Checking size .pio/build/ember-rev0/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=======   ]  68.4% (used 12600 bytes from 18416 bytes)
+Flash: [=======   ]  73.0% (used 37188 bytes from 50944 bytes)
+Creating .pio/build/ember-rev0/firmware.bin
+prepare_image([".pio/build/ember-rev0/firmware.bin"], [".pio/build/ember-rev0/firmware.elf"])
+========================= [SUCCESS] Took 6.20 seconds =========================
+
+Environment    Status    Duration
+-------------  --------  ------------
+ember-rev0     SUCCESS   00:00:06.198
+========================= 1 succeeded in 00:00:06.198 =========================

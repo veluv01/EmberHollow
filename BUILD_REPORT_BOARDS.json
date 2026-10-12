@@ -1,0 +1,73 @@
+{
+  "game": "Ember Hollow",
+  "version": "1.1.0",
+  "dependency_revision": "c008a001a51f1eaa5087634193a04bbd4f0657c0",
+  "application_origin": "0x00003000",
+  "hardware_tested": false,
+  "save_magic": "EHLO",
+  "save_version": 1,
+  "save_record_bytes": 40,
+  "target_frame_rate": 30,
+  "display_spi_hz": 12000000,
+  "builds": [
+    {
+      "board": "weact-f8u6",
+      "target_id": "0x36384657",
+      "environment": "ember",
+      "build_type": "release",
+      "flash_bytes": 37140,
+      "flash_budget_bytes": 50432,
+      "static_ram_bytes": 12600,
+      "static_ram_budget_bytes": 18416,
+      "save_pages": 2,
+      "sha256": "06f7880bf2d2fb559ca016945bb45c42f030bbad4d6f98da327e42beddb786aa"
+    },
+    {
+      "board": "weact-f8u6",
+      "target_id": "0x36384657",
+      "environment": "ember-debug",
+      "build_type": "debug",
+      "flash_bytes": 45192,
+      "flash_budget_bytes": 50432,
+      "static_ram_bytes": 12968,
+      "static_ram_budget_bytes": 18416,
+      "save_pages": 2,
+      "sha256": "b8f6cc5f12a40da47dd2b30094013b1c485327795c406c5eb3cb5fe7a8d5d218"
+    },
+    {
+      "board": "rev0",
+      "target_id": "0x35335843",
+      "environment": "ember-rev0",
+      "build_type": "release",
+      "flash_bytes": 37188,
+      "flash_budget_bytes": 50432,
+      "static_ram_bytes": 12600,
+      "static_ram_budget_bytes": 18416,
+      "save_pages": 2,
+      "sha256": "bcf89668e895518eecc3427c8e111bab74d0c00d363c4168060de771d1eee656"
+    },
+    {
+      "board": "rev0",
+      "target_id": "0x35335843",
+      "environment": "ember-rev0-debug",
+      "build_type": "debug",
+      "flash_bytes": 45224,
+      "flash_budget_bytes": 50432,
+      "static_ram_bytes": 12968,
+      "static_ram_budget_bytes": 18416,
+      "save_pages": 2,
+      "sha256": "d61236657fa0d0ccc0af7af5d56ac81630d25e7c8b4c7ebb1d40be14082ffd4e"
+    }
+  ],
+  "checks": {
+    "builder_and_release_chg_headers_crc": "passed",
+    "opposite_board_rejection": "passed",
+    "menu_picture_round_trip": "passed",
+    "single_and_multi_board_cart_round_trip": "passed"
+  },
+  "limitations": [
+    "No hardware upload or playtest",
+    "No measured physical frame rate or stack high-water mark",
+    "Future dependency updates require rebuilding and checking both boards"
+  ]
+}

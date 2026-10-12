@@ -76,7 +76,7 @@ def main():
     args=ap.parse_args();setup(args.source)
     if args.action=='setup':return
     if args.action=='build':
-        run([sys.executable,'-m','platformio','run','-e','ember','-e','ember-debug'],ROOT/'out/build.log')
+        run([sys.executable,'-m','platformio','run','-e','ember','-e','ember-debug','-e','ember-rev0','-e','ember-rev0-debug'],ROOT/'out/build.log')
     else:
         env=dict(os.environ)
         if os.name!='nt':

@@ -1,0 +1,25 @@
+{
+  "name": "CHGame Rev0 (CH32X035G8U6)",
+  "vendor": "CHGame",
+  "url": "https://github.com/bateske/CHGame",
+  "frameworks": [
+    "arduino"
+  ],
+  "build": {
+    "mcu": "ch32x035g8u6",
+    "f_cpu": "48000000L",
+    "march": "rv32imacxw",
+    "mabi": "ilp32",
+    "core": "chgame",
+    "variant": "CHGame_Rev0",
+    "extra_flags": "-DARDUINO_CHGAME_REV0"
+  },
+  "upload": {
+    "maximum_size": 50944,
+    "maximum_ram_size": 18416,
+    "protocol": "chgame",
+    "protocols": [
+      "chgame"
+    ]
+  }
+}

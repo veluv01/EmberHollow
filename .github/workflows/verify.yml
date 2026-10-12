@@ -21,7 +21,9 @@ jobs:
         run: |
           g++ -std=c++14 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra tools/tests/test_game.cpp Game.cpp src/assets/Assets.cpp -o /tmp/ember-native-tests
           /tmp/ember-native-tests
-      - name: Build release and debug
+      - name: Build release and debug for both boards
         run: .venv/bin/python tools/project.py build
+      - name: Verify board packages
+        run: .venv/bin/python games/EmberHollow/tools/package_boards.py --check
       - name: Simulator and regression checks
         run: .venv/bin/python tools/project.py check
